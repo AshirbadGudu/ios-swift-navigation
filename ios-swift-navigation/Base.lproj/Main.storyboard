@@ -15,8 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7J-Zu-v9J">
+                                <rect key="frame" x="119.5" y="418" width="175" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="e6C-33-e4C"/>
+                                    <constraint firstAttribute="width" constant="175" id="xh7-Wc-g5G"/>
+                                </constraints>
+                                <state key="normal" title="Go To New Screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDB-dr-HUi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="m7J-Zu-v9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UzF-Yv-3nM"/>
+                            <constraint firstItem="m7J-Zu-v9J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W2l-HC-CTg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Root Screen" id="AtI-IU-1IX"/>
                 </viewController>

@@ -11,10 +11,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Change Title Programatically
-        self.title = "Changed Title Programatically"
     }
 
+    @IBAction func onTap(){
+        navigationController?.pushViewController(NewViewController(), animated: true )
+    }
+}
 
+
+class NewViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemPink
+    }
 }
 
