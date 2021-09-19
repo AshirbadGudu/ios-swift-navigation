@@ -44,6 +44,41 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="87.723214285714278"/>
         </scene>
+        <!--New View Controller-->
+        <scene sceneID="NfN-1F-5le">
+            <objects>
+                <viewController storyboardIdentifier="new" id="Lvr-yF-FkT" customClass="NewViewController" customModule="ios_swift_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNP-Nb-fhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6s-Zf-r8b">
+                                <rect key="frame" x="128" y="418" width="158" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Eb5-TY-Jta"/>
+                                    <constraint firstAttribute="width" constant="158" id="Xr0-G8-FLw"/>
+                                </constraints>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap" destination="Lvr-yF-FkT" eventType="touchUpInside" id="Y9R-s2-Ni2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4WS-bj-UBj"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b6s-Zf-r8b" firstAttribute="centerX" secondItem="aNP-Nb-fhJ" secondAttribute="centerX" id="IWh-2v-Ff6"/>
+                            <constraint firstItem="b6s-Zf-r8b" firstAttribute="centerY" secondItem="aNP-Nb-fhJ" secondAttribute="centerY" id="aDg-Uk-puu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exV-li-pgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="88"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kwm-30-UvG">
             <objects>
@@ -69,6 +104,9 @@
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

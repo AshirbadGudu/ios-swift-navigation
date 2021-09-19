@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTap(){
-        let newVC = NewViewController()
+        let newVC = storyboard?.instantiateViewController(identifier: "new") as! NewViewController
         newVC.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(newVC, animated: true )
     }
@@ -26,6 +26,9 @@ class NewViewController: UIViewController {
         super.viewDidLoad()
         self.title = "New Screen"
         view.backgroundColor = .systemIndigo
+    }
+    @IBAction func onTap(){
+        navigationController?.popViewController(animated: true)
     }
 }
 
