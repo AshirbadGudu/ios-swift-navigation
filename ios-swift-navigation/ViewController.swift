@@ -22,7 +22,8 @@ class ViewController: UIViewController {
 class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        self.title = "New Screen"
+        view.backgroundColor = .systemGray
     }
 }
 
